@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Boost'English Navigation</title>
+  <link rel="stylesheet" href="menu.css">
+  
+</head>
+<body>
+  <header class="main-header">
+    <div class="logo-area">
+      <img src="images/logo.png" alt="Logo" class="logo">
+      <span class="site-name">Boost'English</span>
+    </div>
+    <nav class="family-menu">
+      <button class="family-btn" data-family="everyday">Everyday</button>
+      <button class="family-btn" data-family="professional">Professional</button>
+      <button class="family-btn" data-family="specialist">Specialist</button>
+      <button class="family-btn" data-family="learning">Learning</button>
+    </nav>
+    <input type="search" id="searchBox" placeholder="Search a brick or keyword...">
+    <button class="teacher-view">👁 Switch to teacher view</button>
+  </header>
+
+  <div class="main-layout">
+    <aside class="brick-list" id="brickList">
+      <!-- Liste des briques s'affichera ici selon la famille -->
+       
+    </aside>
+    <!--<iframe src="menu.html" class="side-menu" title="Menu"></iframe>-->
+  <iframe src="accueil.html" class="brick-content" title="Content"></iframe>
+  
+
+  </div>
+
+  <script src="menus.js"></script>
+  <script src="menu-logic.js"></script>
+</body>
+</html>

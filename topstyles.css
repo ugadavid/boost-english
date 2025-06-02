@@ -1,0 +1,125 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('images/fond_4.png');
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.decorate {
+  position: relative;
+}
+
+.decorate::before {
+  content: "";
+  position: absolute;
+  background-image: url('images/boostaunot_1.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(150px, 25vw, 300px);
+  height: clamp(150px, 40vh, 300px);
+  bottom: 10vh;
+  left: 15vw;
+  z-index: 2;
+}
+
+.decorate::after {
+  content: "";
+  position: absolute;
+  background-image: url('images/logo.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(40px, 8vw, 100px);
+  height: clamp(40px, 8vw, 100px);
+  top: 2vh;
+  left: 2vw;
+  z-index: 3;
+}
+
+.decorate span {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  pointer-events: none;
+}
+
+.decorate .stars {
+  background-image: url('images/stars.png');
+  width: clamp(20px, 5vw, 60px);
+  height: clamp(20px, 5vw, 60px);
+  top: 20vh;
+  left: 30vw;
+}
+
+.decorate .title {
+  background-image: url('images/learningObjectives.png');
+  width: clamp(200px, 35vw, 460px);
+  height: clamp(60px, 10vh, 100px);
+  top: 5vh;
+  left: 55vw;
+}
+
+.decorate .at-the-end {
+  background-image: url('images/at-the-end.png');
+  width: clamp(150px, 25vw, 360px);
+  height: clamp(60px, 10vh, 100px);
+  top: 20vh;
+  left: 60vw;
+}
+
+.text-box::before {
+  content: attr(data-text);
+  position: absolute;
+  top: 35vh;
+  left: 55vw;
+  width: clamp(200px, 35vw, 420px);
+  font-size: clamp(14px, 2vw, 22px);
+  font-weight: bold;
+  line-height: 1.4;
+  color: black;
+  white-space: pre-line;
+  z-index: 5;
+}
+
+.progress::before {
+  content: "";
+  position: absolute;
+  background-image: url('images/hand.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(60px, 15vw, 150px);
+  height: clamp(60px, 15vw, 150px);
+  bottom: 15vh;
+  right: 5vw;
+  z-index: 4;
+}
+
+.progress::after {
+  content: "";
+  position: absolute;
+  background-image: url('images/progressBar.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: clamp(150px, 35vw, 380px);
+  height: clamp(20px, 5vh, 40px);
+  bottom: 5vh;
+  left: 55vw;
+  z-index: 4;
+}

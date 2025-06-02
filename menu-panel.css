@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #e9eef6;
+}
+
+.menu-panel {
+  width: 100%;
+  height: 100vh;
+  background-color: #243654;
+  color: white;
+  padding: 1rem;
+  box-sizing: border-box;
+  overflow-y: auto;
+}
+
+.menu-title {
+  font-size: 1.4rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #ffcf59;
+}
+
+.menu-panel ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-panel li {
+  padding: 0.5rem 0.75rem;
+  margin: 0.25rem 0;
+  background-color: #2f4d78;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.menu-panel li:hover,
+.menu-panel li.active {
+  background-color: #4b6da3;
+}
