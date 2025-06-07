@@ -192,18 +192,47 @@ const families = {
 // Menu contextuel à l'intérieur d'une brique (exemple pour 'Numbers')
 const contextMenus = {
   numbers: [
-    { label: "Introduction", link: "numbers/intro.html" },
-    { label: "I start", link: "numbers/start.html" },
+    { label: "Introduction", link: "everyday/numbers/intro.html" },
+    { label: "I start", link: "everyday/numbers/start.html" },
     
   ],
   tellingtime: [
-    { label: "Introduction", link: "numbers/intro.html" },
-    { label: "I start", link: "numbers/start.html" },
+    { label: "Introduction", link: "everyday/numbers/intro.html" },
+    { label: "I start", link: "everyday/numbers/start.html" },
     
   ],
   greetings: [
-    { label: "Introduction", link: "numbers/intro.html" },
-    { label: "I start", link: "numbers/start.html" },
+    { label: "Introduction", link: "everyday/numbers/intro.html" },
+    { label: "I start", link: "everyday/numbers/start.html" },
     
+  ],
+
+
+
+
+
+  cv: [
+    { label: "Introduction", link: "professional/cv/intro.html" },
+    { label: "I start", link: "professional/cvnumbers/start.html" }, 
+  ],
+
+  
+  
+  inthelab: [
+    { label: "Introduction", link: "specialist/inthelab/intro.html" },
+    { label: "I start", link: "specialist/inthelab/start.html" },
+  ],
+  shapes: [
+    { label: "Introduction", link: "specialist/shapes/intro.html" },
+    { label: "I start", link: "specialist/shapes/start.html" },
+  ],
+
+  
+
+
+  sport: [
+    { label: "Introduction", link: "learning/sport/intro.html" },
+    { label: "I start", link: "learning/sport/start.html" },
   ]
+  
 }

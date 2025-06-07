@@ -20,7 +20,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
   function insertContextMenu(li, brickPage) {
     //alert(li + " || " + brickPage);
-    const brickKey = brickPage.split('/').pop().replace('.html', '').replace('-', '');
+    const brickKey = brickPage.split('/').pop().replace('.html', '').replace('-', '').replace(':', '');
     const contextItems = contextMenus[brickKey];
     if (!contextItems || contextItems.length === 0) return;
 
